@@ -25,3 +25,6 @@ dist-ssr
 
 # ignore shell scripts
 /*.sh
+
+# ignore temporary backup folder
+/my-portfolio-backup
