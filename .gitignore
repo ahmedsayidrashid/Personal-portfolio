@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # ignore shell scripts
-scripts.sh
+/*.sh
