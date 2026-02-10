@@ -190,8 +190,9 @@ function App() {
                 Out-of-my-room
               </h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                {/* TODO: Add project description */}
-                Project description coming soon...
+                A lightweight face detection system built on a Raspberry Pi 4
+                using a Logitech webcam to monitor my room and send alerts
+                whenever a sibling or anyone else enters.
               </p>
               <a
                 href="https://github.com/ahmedsayidrashid/Out-of-my-room"
