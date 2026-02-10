@@ -161,8 +161,11 @@ function App() {
                 Minimal-NTP-Server
               </h3>
               <p className="text-text-secondary leading-relaxed mb-4">
-                {/* TODO: Add project description */}
-                Project description coming soon...
+                A lightweight network time protocol (NTP) server built from
+                scratch to synchronize devices connected locally to my PC. It
+                implements core NTP packet handling and time synchronization
+                logic, serving as a minimal, educational alternative to
+                full-scale NTP services.
               </p>
               <a
                 href="https://github.com/ahmedsayidrashid/Minimal-NTP-Server"
