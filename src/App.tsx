@@ -2,7 +2,8 @@ import { Github, Linkedin, BookOpen, Mail, ChevronDown } from "lucide-react";
 import picture_of_me from "./assets/picture_of_me_facing_camera.JPG";
 import picture_of_walkway from "./assets/picture_of_walkway.JPG";
 import picture_of_me_looking_away from "./assets/picture_of_me_facing_the_lake.JPG";
-
+import ntp_server_image from "./assets/NTP_server.jpg";
+import out_of_my_room_image from "./assets/out_of_my_room.jpg";
 function App() {
   return (
     <main className="min-h-screen">
@@ -148,13 +149,17 @@ function App() {
           </h2>
 
           <div className="space-y-8">
-            {/* Project 1: Minimal-NTP-Server */}
             <div className="gradient-border p-6">
               <div className="aspect-video bg-charcoal rounded-lg mb-4 flex items-center justify-center">
-                {/* Replace with: <img src={projectImage} alt="Minimal NTP Server" className="w-full h-full object-cover rounded-lg" /> */}
-                <span className="text-text-muted text-sm font-mono">project-screenshot.png</span>
+                <img
+                  src={ntp_server_image}
+                  alt="Minimal NTP Server"
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
-              <h3 className="text-xl font-bold text-text-primary mb-2">Minimal-NTP-Server</h3>
+              <h3 className="text-xl font-bold text-text-primary mb-2">
+                Minimal-NTP-Server
+              </h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 {/* TODO: Add project description */}
                 Project description coming soon...
@@ -170,13 +175,17 @@ function App() {
               </a>
             </div>
 
-            {/* Project 2: Out-of-my-room */}
             <div className="gradient-border p-6">
               <div className="aspect-video bg-charcoal rounded-lg mb-4 flex items-center justify-center">
-                {/* Replace with: <img src={projectImage} alt="Out of my room" className="w-full h-full object-cover rounded-lg" /> */}
-                <span className="text-text-muted text-sm font-mono">project-screenshot.png</span>
+                <img
+                  src={out_of_my_room_image}
+                  alt="Out of my room"
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
-              <h3 className="text-xl font-bold text-text-primary mb-2">Out-of-my-room</h3>
+              <h3 className="text-xl font-bold text-text-primary mb-2">
+                Out-of-my-room
+              </h3>
               <p className="text-text-secondary leading-relaxed mb-4">
                 {/* TODO: Add project description */}
                 Project description coming soon...
