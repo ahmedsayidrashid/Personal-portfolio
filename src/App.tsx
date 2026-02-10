@@ -201,7 +201,7 @@ function App() {
       <footer className="py-8 px-6 border-t border-slate">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-text-muted text-sm font-mono">
-            &copy; {new Date().getFullYear()} Ahmed Sayid Rashid.
+            &copy; {new Date().getFullYear()} Ahmed Rashid.
           </p>
         </div>
       </footer>
