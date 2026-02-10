@@ -140,6 +140,61 @@ function App() {
         </div>
       </section>
 
+      {/* Projects Section */}
+      <section id="projects" className="py-24 px-6 relative">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            <span className="text-violet-glow font-mono">&gt;</span> Projects
+          </h2>
+
+          <div className="space-y-8">
+            {/* Project 1: Minimal-NTP-Server */}
+            <div className="gradient-border p-6">
+              <div className="aspect-video bg-charcoal rounded-lg mb-4 flex items-center justify-center">
+                {/* Replace with: <img src={projectImage} alt="Minimal NTP Server" className="w-full h-full object-cover rounded-lg" /> */}
+                <span className="text-text-muted text-sm font-mono">project-screenshot.png</span>
+              </div>
+              <h3 className="text-xl font-bold text-text-primary mb-2">Minimal-NTP-Server</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                {/* TODO: Add project description */}
+                Project description coming soon...
+              </p>
+              <a
+                href="https://github.com/ahmedsayidrashid/Minimal-NTP-Server"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-violet-glow hover:text-text-primary transition-colors"
+              >
+                <Github className="w-4 h-4" />
+                View on GitHub
+              </a>
+            </div>
+
+            {/* Project 2: Out-of-my-room */}
+            <div className="gradient-border p-6">
+              <div className="aspect-video bg-charcoal rounded-lg mb-4 flex items-center justify-center">
+                {/* Replace with: <img src={projectImage} alt="Out of my room" className="w-full h-full object-cover rounded-lg" /> */}
+                <span className="text-text-muted text-sm font-mono">project-screenshot.png</span>
+              </div>
+              <h3 className="text-xl font-bold text-text-primary mb-2">Out-of-my-room</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                {/* TODO: Add project description */}
+                Project description coming soon...
+              </p>
+              <a
+                href="https://github.com/ahmedsayidrashid/Out-of-my-room"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-violet-glow hover:text-text-primary transition-colors"
+              >
+                <Github className="w-4 h-4" />
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-slate">
         <div className="max-w-4xl mx-auto text-center">

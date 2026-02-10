@@ -1,23 +1,21 @@
-# Ahmed Sayid Rashid — Personal Site
+# Personal Portfolio
 
-A dark, techy personal portfolio website built with React, TypeScript, Tailwind CSS, and Vite.
+A dark themed, techy personal portfolio website built with React, TypeScript, Tailwind CSS, and Vite.
 
 ## Features
 
-- **Hero Section** — Name, tagline, and profile image with animated gradient effects
 - **Social Links** — Quick access to GitHub, LinkedIn, and Blog
 - **About Section** — Personal bio with photo gallery
-- **Dark Theme** — Purple and black color scheme with glow effects
-- **Fast Performance** — Built with Vite for instant HMR and optimized builds
+- **Projects** — Summary of main projects worked on
 
-## Tech Stack (for now)
+## Tech Stack
 
-| Technology   | Version | Purpose                 |
-| ------------ | ------- | ----------------------- |
-| React        | 19.2    | UI library              |
-| TypeScript   | 5.9     | Type safety             |
-| Vite         | 7.2     | Build tool & dev server |
-| Tailwind CSS | 4.1     | Utility-first styling   |
-| Lucide React | —       | Icons                   |
+| Technology   | Purpose                 |
+| ------------ | ----------------------- |
+| React        | UI library              |
+| TypeScript   | Type safety             |
+| Vite         | Build tool & dev server |
+| Tailwind CSS | Utility-first styling   |
+| Lucide React | Icons                   |
 
 The site should be available at `https://ahmedsite.vercel.app/`.
