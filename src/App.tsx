@@ -90,7 +90,7 @@ function App() {
               </div>
               <a
                 href="mailto:ahmedsayidrashid@gmail.com"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-violet-deep to-violet-glow rounded-lg font-semibold text-white hover:opacity-90 transition-opacity glow-violet-sm"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-violet-dark hover:bg-violet-deep rounded-lg font-bold text-white brightness-125 transition-colors glow-violet-sm"
               >
                 <Mail className="w-5 h-5" />
                 Get in Touch
