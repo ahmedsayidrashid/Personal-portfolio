@@ -1,7 +1,7 @@
 import { Github, Linkedin, BookOpen, Mail, ChevronDown } from "lucide-react";
-import picture_of_me from "./assets/picture_of_me_facing_camera.JPG";
-import picture_of_walkway from "./assets/picture_of_walkway.JPG";
-import picture_of_me_looking_away from "./assets/picture_of_me_facing_the_lake.JPG";
+import facing_camera from "./assets/facing_camera.jpg";
+import walkway from "./assets/walkway.jpg";
+import facing_the_lake from "./assets/facing_the_lake.jpg";
 import ntp_server_image from "./assets/NTP_server.jpg";
 import out_of_my_room_image from "./assets/out_of_my_room.jpg";
 function App() {
@@ -90,7 +90,7 @@ function App() {
               </div>
               <a
                 href="mailto:ahmedsayidrashid@gmail.com"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-violet-deep to-violet-glow rounded-lg font-semibold text-text-primary hover:opacity-90 transition-opacity glow-violet-sm"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-violet-deep to-violet-glow rounded-lg font-semibold text-white hover:opacity-90 transition-opacity glow-violet-sm"
               >
                 <Mail className="w-5 h-5" />
                 Get in Touch
@@ -101,7 +101,7 @@ function App() {
               <div className="gradient-border aspect-square">
                 <div className="w-full h-full rounded-xl bg-charcoal flex items-center justify-center">
                   <img
-                    src={picture_of_me}
+                    src={facing_camera}
                     alt="Picture of me facing the camera"
                     className="w-full h-full object-cover rounded-xl"
                   />
@@ -111,7 +111,7 @@ function App() {
                 <div className="gradient-border aspect-square">
                   <div className="w-full h-full rounded-xl bg-charcoal flex items-center justify-center">
                     <img
-                      src={picture_of_walkway}
+                      src={walkway}
                       alt="Picture of a walkway"
                       className="w-full h-full object-cover rounded-xl"
                     />
@@ -120,7 +120,7 @@ function App() {
                 <div className="gradient-border aspect-square">
                   <div className="w-full h-full rounded-xl bg-charcoal flex items-center justify-center">
                     <img
-                      src={picture_of_me_looking_away}
+                      src={facing_the_lake}
                       alt="Picture of me facing the lake"
                       className="w-full h-full object-cover rounded-xl"
                     />
