@@ -9,6 +9,7 @@ const experiences = [
     description: [
       "Working with the Helix Virtualization Platform (HVP) team, contributing to the development of a FACE conformant release.",
     ],
+    skills: ["C/C++", "Virtualization/Hypervisor", "RTOS", "Embedded Linux"],
     current: true,
   },
   {
@@ -21,6 +22,7 @@ const experiences = [
       "Designed and implemented a ZeroMQ-based IPC protocol, enabling seamless communication between the front-end web interface and the backend configuration tool.",
       "Built backend support for system configuration management, including features such as changing network settings, SSH enablement, and time synchronization control.",
     ],
+    skills: ["Python", "Flask", "ZeroMQ", "Linux", "D-Bus", "systemd", "IPC"],
     current: false,
   },
   {
@@ -33,6 +35,7 @@ const experiences = [
       "Provided personalized guidance to help students tackle complex mathematical exercises, fostering critical thinking and analytical skills.",
       "Graded tests and assessments and provided constructive feedback to students utilizing rubrics to ensure fair grading.",
     ],
+    skills: ["Communication", "Problem Solving", "Mathematics", "Mentoring"],
     current: false,
   },
   {
@@ -44,6 +47,13 @@ const experiences = [
       "Enhanced a C# application for surgical tumor removal by improving code performance and integrating new features, ensuring precise intraoperative imaging for better tumor excision outcomes.",
       "Managed testing and updates for radiation therapy tables, optimizing patient positioning accuracy by 22%.",
       "Proposed and implemented an upgrade of a DOS-based test suite to a modern C# application, improving serial communication and validation efficiency.",
+    ],
+    skills: [
+      "C#",
+      ".NET",
+      "Communication Protocols",
+      "Testing",
+      "Legacy Migration",
     ],
     current: false,
   },
@@ -98,7 +108,7 @@ export default function ExperiencePage() {
                       <p className="text-text-muted text-sm mb-3">
                         {exp.location} • {exp.period}
                       </p>
-                      <ul className="space-y-2">
+                      <ul className="space-y-2 mb-4">
                         {exp.description.map((item, i) => (
                           <li
                             key={i}
@@ -109,6 +119,16 @@ export default function ExperiencePage() {
                           </li>
                         ))}
                       </ul>
+                      <div className="flex flex-wrap gap-2">
+                        {exp.skills.map((skill, i) => (
+                          <span
+                            key={i}
+                            className="px-2 py-1 text-xs bg-violet-dark/20 text-violet-glow border border-violet-dark rounded-md"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
