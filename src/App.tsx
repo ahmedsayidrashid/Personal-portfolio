@@ -1,5 +1,5 @@
 import { Github, Linkedin, BookOpen, Mail, ChevronDown } from "lucide-react";
-import facing_camera from "./assets/facing_camera.jpg";
+import picture_of_lake from "./assets/picture_of_lake.jpg";
 import walkway from "./assets/walkway.jpg";
 import facing_the_lake from "./assets/facing_the_lake.jpg";
 import ntp_server_image from "./assets/NTP_server.jpg";
@@ -101,7 +101,7 @@ function App() {
               <div className="gradient-border aspect-square">
                 <div className="w-full h-full rounded-xl bg-charcoal flex items-center justify-center">
                   <img
-                    src={facing_camera}
+                    src={facing_the_lake}
                     alt="Picture of me facing the camera"
                     className="w-full h-full object-cover rounded-xl"
                   />
@@ -120,7 +120,7 @@ function App() {
                 <div className="gradient-border aspect-square">
                   <div className="w-full h-full rounded-xl bg-charcoal flex items-center justify-center">
                     <img
-                      src={facing_the_lake}
+                      src={picture_of_lake}
                       alt="Picture of me facing the lake"
                       className="w-full h-full object-cover rounded-xl"
                     />
