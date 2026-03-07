@@ -1,21 +1,16 @@
-# Personal Portfolio
+# Ahmed Rashid — Personal Portfolio
 
-A dark themed, techy personal portfolio website built with React, TypeScript, Tailwind CSS, and Vite.
+Personal portfolio website built with React, TypeScript, Tailwind CSS, and Vite. Features multi-page navigation, dark/light theme toggle, and a modern responsive design.
 
 ## Features
 
-- **Social Links** — Quick access to GitHub, LinkedIn, and Blog
-- **About Section** — Personal bio with photo gallery
-- **Projects** — Summary of main projects worked on
+- **Multi-Page Navigation** — React Router with multiple pages (Home, About, Experience, etc)
+- **Dark/Light Theme Toggle** — Switch between themes with localStorage persistence
+- **Navbar** — Fixed header with mobile hamburger menu
+- **Experience Timeline** — Work history with skills tags for each role
+- **Education Section** — Academic background with achievements
+- **Projects Showcase** — Featured projects with images and GitHub links
+- **Resume Download** — Direct PDF download link
+- **Social Links** — GitHub, LinkedIn, Blog, Email
 
-## Tech Stack
-
-| Technology   | Purpose                 |
-| ------------ | ----------------------- |
-| React        | UI library              |
-| TypeScript   | Type safety             |
-| Vite         | Build tool & dev server |
-| Tailwind CSS | Utility-first styling   |
-| Lucide React | Icons                   |
-
-The site should be available at `https://ahmedsite.vercel.app/`.
+Long overdue project, wishing to showcase my work via this site, and blog as I learn so readers can potentially learn something.
