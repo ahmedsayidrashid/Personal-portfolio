@@ -17,7 +17,7 @@ export default function HomePage() {
         <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-violet-glow to-violet-deep opacity-20 blur-xl -z-10" />
       </div>
 
-      <h1 className="text-5xl md:text-7xl font-bold text-center mb-4 bg-gradient-to-r from-text-primary via-violet-glow to-violet-deep bg-clip-text text-transparent">
+      <h1 className="text-5xl md:text-7xl font-bold text-center mb-4 bg-gradient-to-r from-violet-deep via-violet-glow to-violet-deep bg-clip-text text-transparent">
         Ahmed Rashid
       </h1>
       <p className="text-xl md:text-2xl text-text-secondary text-center mb-8 font-mono">

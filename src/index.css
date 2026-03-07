@@ -1,33 +1,51 @@
 @import "tailwindcss";
 
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
-/* Import Google Fonts */
 
 /* Custom theme configuration for Tailwind v4 */
 @theme {
-  --color-void: #0a0a0a;
-  --color-obsidian: #121212;
-  --color-charcoal: #1a1a1a;
-  --color-slate: #2a2a2a;
-
   --color-violet-glow: #a855f7;
   --color-violet-deep: #7c3aed;
   --color-violet-dark: #5b21b6;
   --color-violet-muted: #6b21a8;
 
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+/* Dark theme (default) */
+:root,
+.dark {
+  --color-void: #0a0a0a;
+  --color-obsidian: #121212;
+  --color-charcoal: #1a1a1a;
+  --color-slate: #2a2a2a;
   --color-text-primary: #f4f4f5;
   --color-text-secondary: #a1a1aa;
   --color-text-muted: #71717a;
+  --color-bg-gradient-1: rgba(124, 58, 237, 0.15);
+  --color-bg-gradient-2: rgba(168, 85, 247, 0.1);
+  color-scheme: dark;
+}
 
-  --font-display: "Space Grotesk", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+/* Light theme */
+.light {
+  --color-void: #f8f8fc;
+  --color-obsidian: #ffffff;
+  --color-charcoal: #f0f0f5;
+  --color-slate: #d0d0d8;
+  --color-text-primary: #0f0f1a;
+  --color-text-secondary: #2a2a3a;
+  --color-text-muted: #4a4a5a;
+  --color-bg-gradient-1: rgba(124, 58, 237, 0.08);
+  --color-bg-gradient-2: rgba(168, 85, 247, 0.05);
+  color-scheme: light;
 }
 
 :root {
   font-family: var(--font-display);
   line-height: 1.6;
   font-weight: 400;
-  color-scheme: dark;
   color: var(--color-text-primary);
   background-color: var(--color-void);
   font-synthesis: none;
@@ -45,15 +63,44 @@ body {
   min-height: 100vh;
   background: radial-gradient(
       ellipse at top,
-      rgba(124, 58, 237, 0.15) 0%,
+      var(--color-bg-gradient-1) 0%,
       transparent 50%
     ),
     radial-gradient(
       ellipse at bottom right,
-      rgba(168, 85, 247, 0.1) 0%,
+      var(--color-bg-gradient-2) 0%,
       transparent 40%
     ),
     var(--color-void);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tailwind v4 custom utilities using CSS variables */
+@layer utilities {
+  .bg-void {
+    background-color: var(--color-void);
+  }
+  .bg-obsidian {
+    background-color: var(--color-obsidian);
+  }
+  .bg-charcoal {
+    background-color: var(--color-charcoal);
+  }
+  .bg-slate {
+    background-color: var(--color-slate);
+  }
+  .text-text-primary {
+    color: var(--color-text-primary);
+  }
+  .text-text-secondary {
+    color: var(--color-text-secondary);
+  }
+  .text-text-muted {
+    color: var(--color-text-muted);
+  }
+  .border-slate {
+    border-color: var(--color-slate);
+  }
 }
 
 /* Glow effect utilities */
@@ -77,6 +124,7 @@ body {
   position: relative;
   background: var(--color-obsidian);
   border-radius: 12px;
+  transition: background-color 0.3s ease;
 }
 
 .gradient-border::before {
