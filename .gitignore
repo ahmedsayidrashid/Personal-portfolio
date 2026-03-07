@@ -5,9 +5,3 @@ node_modules/
 
 # ignore build output
 dist
-
-# ignore shell scripts
-/*.sh
-
-# ignore any pdf files (for now)
-*.pdf
