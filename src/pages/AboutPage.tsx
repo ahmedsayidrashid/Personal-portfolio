@@ -1,4 +1,4 @@
-import { Mail, GraduationCap, Award } from "lucide-react";
+import { Mail, GraduationCap, Award, Code } from "lucide-react";
 import picture_of_lake from "../assets/picture_of_lake.jpg";
 import walkway from "../assets/walkway.jpg";
 import facing_the_lake from "../assets/facing_the_lake.jpg";
@@ -118,6 +118,68 @@ export default function AboutPage() {
                     Algorithms, Object-Oriented Programming
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Skills Section */}
+        <div className="mt-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            <span className="text-violet-glow font-mono">&gt;</span> Skills
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Languages */}
+            <div className="gradient-border p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-violet-dark/30 rounded-lg">
+                  <Code className="w-5 h-5 text-violet-glow" />
+                </div>
+                <h3 className="text-lg font-bold text-text-primary">
+                  Languages
+                </h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {["C/C++", "Python", "Java", "JavaScript", "C#"].map((lang) => (
+                  <span
+                    key={lang}
+                    className="px-3 py-1.5 bg-charcoal border border-slate rounded-lg text-text-secondary text-sm hover:border-violet-glow hover:text-violet-glow transition-colors"
+                  >
+                    {lang}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Frameworks & Tools */}
+            <div className="gradient-border p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-violet-dark/30 rounded-lg">
+                  <Code className="w-5 h-5 text-violet-glow" />
+                </div>
+                <h3 className="text-lg font-bold text-text-primary">
+                  Frameworks & Tools
+                </h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "FreeRTOS",
+                  "Flask",
+                  "React",
+                  "Docker",
+                  "Git",
+                  "Pico SDK",
+                  "Arduino",
+                  "ZeroMQ",
+                ].map((tool) => (
+                  <span
+                    key={tool}
+                    className="px-3 py-1.5 bg-charcoal border border-slate rounded-lg text-text-secondary text-sm hover:border-violet-glow hover:text-violet-glow transition-colors"
+                  >
+                    {tool}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
