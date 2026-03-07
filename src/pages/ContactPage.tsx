@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, MapPin } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, FileText } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -77,6 +77,23 @@ export default function ContactPage() {
                 <p className="text-text-primary font-medium">Ottawa, Canada</p>
               </div>
             </div>
+
+            {/* Resume */}
+            <a
+              href="/Resume.pdf"
+              download="Ahmed_Rashid_Resume.pdf"
+              className="gradient-border p-6 flex items-center gap-4 hover:scale-[1.02] transition-transform"
+            >
+              <div className="p-3 bg-violet-dark/30 rounded-lg">
+                <FileText className="w-6 h-6 text-violet-glow" />
+              </div>
+              <div>
+                <p className="text-text-muted text-sm">Resume</p>
+                <p className="text-text-primary font-medium">
+                  Download my resume (PDF)
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>

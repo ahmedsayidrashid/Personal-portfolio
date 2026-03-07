@@ -1,4 +1,4 @@
-import { Github, Linkedin, BookOpen, ChevronDown } from "lucide-react";
+import { Github, Linkedin, BookOpen, ChevronDown, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function HomePage() {
@@ -57,6 +57,16 @@ export default function HomePage() {
           </span>
           <span className="text-xs text-text-muted">(coming soon)</span>
         </Link>
+        <a
+          href="/Resume.pdf"
+          download="Ahmed_Rashid_Resume.pdf"
+          className="group flex items-center gap-2 px-5 py-3 rounded-lg bg-charcoal/50 border border-slate hover:border-violet-glow transition-all duration-300 hover:glow-violet-sm"
+        >
+          <FileText className="w-5 h-5 text-violet-glow group-hover:text-text-primary transition-colors" />
+          <span className="text-text-secondary group-hover:text-text-primary transition-colors">
+            Resume
+          </span>
+        </a>
       </div>
 
       <Link to="/about" className="absolute bottom-8 animate-float">
